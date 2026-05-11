@@ -2,6 +2,7 @@ static void initCompiler(Compiler* compiler, FunctionType type) {
   compiler->function = newFunction();
   // This function is referenced by the compiler
   incRef((Obj*) compiler->function);
+}
 
 static ObjFunction* endCompiler() {
   current = current->enclosing;
